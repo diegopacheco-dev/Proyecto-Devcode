@@ -1,11 +1,15 @@
 *{
 	box-sizing: border-box;/* el padding y el borde se incluye en la caja sin aumentar el ancho*/
 }
+html{
+	font-family: 'Lato', sans-serif;
+}
 .lateral{
 	background-color: #56B3AB;
 	bottom: 0;
 	left: 0;
 	padding-left: 1em;
+	padding-top: 1em;
 	position: fixed;
 	top: 0;
 	width: 350px;
@@ -17,6 +21,10 @@
 	border-radius: 50%;
 	overflow: hidden;  /* lo que sobre de la caja no se muestra*/
 	margin:0;
+}
+
+.perfil__foto{
+	width: 100%;
 }
 
 .perfil__nombres{
@@ -51,6 +59,44 @@
 
 .habilidad{
 	background-color: #0F6A62;
+	color: #FFF;
+	display:inline-block;
+	font-size: 12px;
+	padding:.5em;
+
+}
+
+/* Proyectos */
+ 
+.proyectos{
+	margin-left: 350px;
+	padding: 1em;
+	display: table;
+}
+
+.proyecto{
+	width: 50%;
+	display:table-cell;
+	padding: 1em;
+}
+
+.proyecto__imagen{
+	width: 100%;
+	background-color: blue;
+}
+
+.proyecto__titulo{
+	color: #29597C;
+	font-size: 18px;
+}
+
+.proyecto__descripcion{
+	color:#797D7F;
+	font-size: 18px;
+}
+
+.proyecto .habilidades .habilidad{
+	background-color: #29597C;
 	color: #FFF;
 	display:inline-block;
 	font-size: 12px;
